@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-mnz-OhWr.css">
+</head>
+<body>
+    <div id="main_container">
+      <div id="buttons">
+        <button id="bt_cadastrar" onclick="showForm(1)">Cadastrar</button>
+        <button id="bt_entrar" onclick="showForm(2)">Entrar</button>
+    </div>
+    <div id="tipo_usuario">
+      <label><input type="radio"  name="tipo" value="responsavel"> Responsável</label>
+      <label><input type="radio" checked name="tipo" value="integrante"> Integrante</label>
+  </div>
+        <form id="formulario_cadastro">
+          
+            <label>Usuario <input type="text" id="nome_usuario" placeholder="Digite seu nome de Usuario"></label>
+            <label>Nome <input type="text" id="nome_cadastro" placeholder="Digite seu nome"></label>
+            <label>Senha <input type="password" id="senha_cadastro" placeholder="Digite sua senha"></label>
+            <span id="erro_register"></span>
+          </form>
+        <div id="entrar">
+          <label>Nome <input type="text" id="nome_login" placeholder="Digite o nome"></label>
+          <label>Senha <input type="password" id="senha_login" placeholder="Digite a senha"></label>
+          <span id="erro_login"></span>
+      </div>
+      
+          <button class="enviar" type="submit" onclick="enviar()">Enviar</button>
+     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
